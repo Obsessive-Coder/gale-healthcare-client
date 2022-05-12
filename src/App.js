@@ -37,9 +37,7 @@ function App() {
     const questionName = `question${questionNumber}`;
 
     try {
-      const apiUtil = new ApiUtility();
-      const apiMethod = `solveQuestion${questionNumber}`;
-      const solution = await apiUtil[apiMethod]();
+      const solution = await ApiUtility.solveQuestion(questionNumber);
       addAnswer(questionName, solution);
     } catch (error) {
       console.log('Error: ', error);
@@ -50,7 +48,7 @@ function App() {
   return (
     <div className="App p-5">
       <header>
-
+        TODO: Don't forget the header
       </header>
 
       <Form onSubmit={handleSubmit} className="w-75">
@@ -63,6 +61,10 @@ function App() {
           />
         ))}
       </Form>
+
+      <footer>
+        TODO: Don't forget the footer
+      </footer>
     </div>
   );
 }
