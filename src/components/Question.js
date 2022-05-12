@@ -3,8 +3,9 @@ import React from 'react';
 // Components.
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import CodeModal from './CodeModal';
 
-export default function Question({ number, question, solution }) {
+export default function Question({ number, question, answer, solution }) {
   return (
     <Form.Group className="d-flex flex-column px-3">
       <div className="px-3 h4" style={{ textAlign: 'justify' }}>
@@ -13,14 +14,16 @@ export default function Question({ number, question, solution }) {
         ))}
 
         {/* Solution */}
-        {solution ? (
+        {answer ? (
           <>
             <Form.Label className="mt-3 text-secondary" style={{ fontWeight: 'bold' }}>
               Solution:
             </Form.Label>
             <Form.Text className="d-block h3">
-              {solution}
+              {answer}
             </Form.Text>
+
+            <CodeModal questionNumber={number} solution={solution} />
           </>
         ) : (
           <Button

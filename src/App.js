@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 // Destructure constants.
-const { QUESTIONS } = Constants;
+const { QUESTIONS, SOLUTIONS, } = Constants;
 
 function App() {
   const [solutionsData, setSolutionsData] = useState({});
@@ -61,7 +61,8 @@ function App() {
                 <Question
                   number={index + 1}
                   question={question}
-                  solution={solutionsData[`question${index + 1}`]}
+                  answer={solutionsData[`question${index + 1}`]}
+                  solution={SOLUTIONS[index]}
                 />
               </Accordion.Body>
             </Accordion.Item>
