@@ -1,61 +1,75 @@
 import React, { useState } from 'react';
 
 // Components.
-import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { Question } from './components';
 
 // Styles, utils, and helpers.
-import axios from 'axios';
-import { ApiUtility } from './util';
+import { ApiUtility, Constants } from './util';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-function App() {
-  const [text, setText] = useState('');
+// Destructure constants.
+const { QUESTIONS } = Constants;
 
-  const handleAdd = ({ target: { value } }) => {
-    setText(value);
+function App() {
+  const [solutionsData, setSolutionsData] = useState({});
+
+  const addAnswer = (questionName, solution) => {
+    if (!questionName || !solution) return;
+
+    // Prevent adding duplicate answers.
+    const solutionKeys = Object.keys(solutionsData);
+    const isAdded = solutionKeys.filter(key => key === questionName).length > 0;
+
+    if (!isAdded) {
+      setSolutionsData({
+        ...solutionsData,
+        [questionName]: solution,
+      });
+    }
   };
 
-  const handleSubmit = async e => {
-    e.preventDefault();
+  const handleSubmit = async event => {
+    event.preventDefault();
 
-    // const formData = new FormData();
-    // formData.append('text', text);
+    const { value: questionNumber } = event.nativeEvent.submitter;
+    const questionName = `question${questionNumber}`;
 
-    const apiUtil = new ApiUtility();
-    const answer = await apiUtil.solveQuestion1();
-
-    console.log(answer);
-
-    // try {
-    //   const formData = new FormData();
-    //   formData.append('text', text);
-    //   const url = 'http://localhost:8000/data';
-    //   const { data } = await axios.post(url, formData);
-
-    //   console.log(data);
-    // } catch (error) {
-    //   console.log('Error: ', error);
-    // }
+    try {
+      const apiUtil = new ApiUtility();
+      const apiMethod = `solveQuestion${questionNumber}`;
+      const solution = await apiUtil[apiMethod]();
+      addAnswer(questionName, solution);
+    } catch (error) {
+      console.log('Error: ', error);
+      addAnswer(questionName, 'There was an error solving this question. Please check the console for more information.');
+    }
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <Form onSubmit={handleSubmit}>
-          <Form.Group>
-            <Form.Control
-              id="text"
-              type="text"
-              placeholder="Enter some text"
-              onChange={handleAdd}
-            />
+    <div className="App p-5">
+      <header>
 
-            <Button id="submit" type="submit">Submit</Button>
-          </Form.Group>
-        </Form>
       </header>
+
+      <Form onSubmit={handleSubmit} className="w-75">
+        {QUESTIONS.map((question, index) => (
+          <Question
+            key={`question-${index + 1}`}
+            number={index + 1}
+            question={question}
+            solution={solutionsData[`question${index + 1}`]}
+          />
+        ))}
+
+        {/* <Form.Control
+            id="text"
+            type="text"
+            placeholder="Enter some text"
+            onChange={handleAdd}
+          /> */}
+      </Form>
     </div>
   );
 }
