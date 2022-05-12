@@ -62,13 +62,6 @@ function App() {
             solution={solutionsData[`question${index + 1}`]}
           />
         ))}
-
-        {/* <Form.Control
-            id="text"
-            type="text"
-            placeholder="Enter some text"
-            onChange={handleAdd}
-          /> */}
       </Form>
     </div>
   );
