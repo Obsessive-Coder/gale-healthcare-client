@@ -16,9 +16,12 @@ export default function Question({ number, question, solution }) {
 
         {/* Solution */}
         {solution ? (
-          <Form.Label className="mt-3 h3">
-            {solution}
-          </Form.Label>
+          <>
+            <Form.Label className="mt-3">Solution:</Form.Label>
+            <Form.Text className="d-block h3">
+              {solution}
+            </Form.Text>
+          </>
         ) : (
           <Button
             type="submit"
