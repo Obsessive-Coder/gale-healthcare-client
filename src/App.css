@@ -24,6 +24,12 @@
   color: #61dafb;
 }
 
+.accordion-header .accordion-button {
+  background-color: rgb(33, 37, 41);
+  color: rgb(108, 117, 125);
+  font-size: 1.5rem;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

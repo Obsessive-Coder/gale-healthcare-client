@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 // Components.
+import Accordion from 'react-bootstrap/Accordion';
 import Form from 'react-bootstrap/Form';
 import { Question } from './components';
 
@@ -52,14 +53,20 @@ function App() {
       </header>
 
       <Form onSubmit={handleSubmit} className="w-75">
-        {QUESTIONS.map((question, index) => (
-          <Question
-            key={`question-${index + 1}`}
-            number={index + 1}
-            question={question}
-            solution={solutionsData[`question${index + 1}`]}
-          />
-        ))}
+        <Accordion defaultActiveKey={0}>
+          {QUESTIONS.map((question, index) => (
+            <Accordion.Item eventKey={index} key={`question-${index + 1}`} className="mb-4 bg-transparent border-0 shadow">
+              <Accordion.Header className="bg-dark text-light">{`Question ${index + 1}`}</Accordion.Header>
+              <Accordion.Body className="pt-0">
+                <Question
+                  number={index + 1}
+                  question={question}
+                  solution={solutionsData[`question${index + 1}`]}
+                />
+              </Accordion.Body>
+            </Accordion.Item>
+          ))}
+        </Accordion>
       </Form>
 
       <footer>

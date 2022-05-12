@@ -6,9 +6,7 @@ import Form from 'react-bootstrap/Form';
 
 export default function Question({ number, question, solution }) {
   return (
-    <Form.Group className="d-flex flex-column mb-5 p-3 shadow">
-      <Form.Label>{`Question ${number}`}:</Form.Label>
-
+    <Form.Group className="d-flex flex-column px-3">
       <div className="px-3 h4" style={{ textAlign: 'justify' }}>
         {question.split('\n').map(textLine => (
           <Form.Text className="d-block my-3">{textLine}</Form.Text>
@@ -17,7 +15,9 @@ export default function Question({ number, question, solution }) {
         {/* Solution */}
         {solution ? (
           <>
-            <Form.Label className="mt-3">Solution:</Form.Label>
+            <Form.Label className="mt-3 text-secondary" style={{ fontWeight: 'bold' }}>
+              Solution:
+            </Form.Label>
             <Form.Text className="d-block h3">
               {solution}
             </Form.Text>
