@@ -45,8 +45,8 @@ export default function Question({ number, question, answer, solution }) {
                   <UserCard key={`user-${user.userid}`} user={user} />
                 ))}
 
-                {number === 3 && (
-                  <TestQuestions testQuestions={answer} />
+                {(number === 3 || number === 6) && (
+                  <TestQuestions questionNumber={number} testQuestions={answer} />
                 )}
               </CardGroup>
             ) : (

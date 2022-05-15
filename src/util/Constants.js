@@ -190,8 +190,8 @@ export default class Constants {
      * ask somebody if it were still too ambiguous to accurately solve.
      * 
      * I considered returning both in a JSON like object but thought this to be inefficient
-     * because the client or other consumer of this class can use the length of the
-     * to get the number of duplicates.
+     * because the client or other consumer of this class can use the length of the duplicates
+     * array to get the number of duplicates.
      */
 
     class Question_6 {
