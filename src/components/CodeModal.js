@@ -12,7 +12,7 @@ export default function CodeModal({ questionNumber, solution }) {
 
   return (
     <>
-      <Button variant="outline-primary" onClick={toggleIsShown} className="align-self-start mt-3">
+      <Button variant="outline-success" size="sm" onClick={toggleIsShown}>
         Show Code
       </Button>
 

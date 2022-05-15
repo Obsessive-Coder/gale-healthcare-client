@@ -1,7 +1,10 @@
 export default class Constants {
   static QUESTIONS = [
     'Your grandfather typed the following string. Unfortunately he typed a lot of words in duplicate because he wasn\'t paying attention. Write php code that will convert the following line:\nThethe rain in spainspain falls mainly in the plainplain. The old manman is not here rightright now. When will he be backback? Saturday is the bestbest dayday of the week! I likelike it because I get to sleep inin.\nTo:\nThe rain in spain falls mainly in the plain. The old man is not here right now. When will he be back? Saturday is the best day of the week! I like it because I get to sleep in.',
+
     'The Appendix A section has a series of create table statements.... using these as a guide generate 2 queries.\n1) Write a query where the result is users: user id, username, email, all previous passwords for the user. The query output must list users uniquely.\n2) Write a query that lists polls a user voted in. The results should be username, poll question, total number of votes for the poll.',
+
+    'A school has to give all its students an end-of-year examination. The test consists of 40 questions for each student. The question pool is 70 questions. The 40 question test must contain questions 1 - 5 from the question pool for each test. To minimize cheating, the school wants the 40 questions to be randomly ordered. You may not have the same question twice on a test. Code the above in php.',
   ];
 
   static SOLUTIONS = [
@@ -118,6 +121,52 @@ export default class Constants {
           }
         }
       }
+    `,
+    `
+    <?php
+
+    include_once 'IQuestion.php';
+
+    class Question_3 implements IQuestion
+    {
+      public function solve()
+      {
+        $firstQuestions =  $this->getQuestionNumbers();
+
+        // Splice out all but the first questions.
+        $restQuestions = array_splice($firstQuestions, 5);
+
+        // Get 35 random questions from the remaining question pool.
+        $randomQuestions = $this->getRandomQuestions($restQuestions);
+
+        // Merge and shuffle questions for final result.
+        $finalQuestions = array_merge($firstQuestions, $randomQuestions);
+        shuffle($finalQuestions);
+
+        echo json_encode($finalQuestions);
+      }
+
+      private function getQuestionNumbers()
+      {
+        // Returns an array of numbers 1 through 70 to represent the test questions.
+        $questions = array();
+
+        $number = 1;
+        while ($number <= 70) {
+          array_push($questions, $number++);
+        }
+
+        return $questions;
+      }
+
+      private function getRandomQuestions($questions)
+      {
+        // Get 35 random questions from the remaining questions.
+        $randomKeys = array_rand($questions, 35);
+        return array_map(fn ($key) => $questions[$key], $randomKeys);
+      }
+    }
+
     `
   ];
 }

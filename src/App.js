@@ -56,7 +56,10 @@ function App() {
         <Accordion defaultActiveKey={0}>
           {QUESTIONS.map((question, index) => (
             <Accordion.Item eventKey={index} key={`question-${index + 1}`} className="mb-4 bg-transparent border-0 shadow">
-              <Accordion.Header className="bg-dark text-light">{`Question ${index + 1}`}</Accordion.Header>
+              <Accordion.Header className="bg-dark text-light">
+                {`Question ${index + 1}`}
+              </Accordion.Header>
+
               <Accordion.Body className="pt-0">
                 <Question
                   number={index + 1}
