@@ -11,6 +11,12 @@ export default class Constants {
     'TODO: Do Question 5',
 
     'You have an array of 200 numbers, there are duplicates, write javascript code that would find them and return the number of duplicates in order.',
+
+    'You are working on a site, after editing some code, the page comes up with a blank screen instead of the site, your php config has display_errors set to 0, describe your process for fixing this issue ...state any assumptions about web server, etc.',
+
+    'TODO: Do Question 8',
+
+    'TODO: Do Question 9',
   ];
 
   static SOLUTIONS = [
@@ -261,6 +267,18 @@ export default class Constants {
 
     console.log('Duplicates in order: ', JSON.stringify(duplicates, null, 2));
     console.log('Number of duplicates: ', duplicates.length);
-    `
+    `,
+
+    `This project is my first time using PHP, but I would handle it the same way as I would an error in any other language.\nMy research shows that I can call the following methods to display different types of errors:
+
+    ini_set(display_errors', 1);
+    ini_set('display_startup_errors', 1);
+    error_reporting(E_ALL);
+    \nI would begin by displaying these errors and then using the information provided to debug the issue. If the error gave a file and line number\nI would start there and imagine what the code is doing. If I can't use the error to solve it myself I would use Google to find answers. that have\nhad similar errors. After I found a solution online that solves the same error I would first understand the solution and then implement it. If it works\nthen I would move on with my life, else I would repeat the Google process. If I feel I have spent too much time on the error I would try to find a\nteammate with a few minutes of free time in case they could quickly spot something I missed or provide more information from their experiences\nwith the project and PHP.
+    `,
+
+    `TODO: Solve question 8`,
+
+    `TODO: Solve question 9`,
   ];
 }

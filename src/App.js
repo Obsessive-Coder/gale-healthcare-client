@@ -39,6 +39,7 @@ function App() {
 
     try {
       const solution = await ApiUtility.solveQuestion(questionNumber);
+      console.log(solution);
       addAnswer(questionName, solution);
     } catch (error) {
       console.log('Error: ', error);

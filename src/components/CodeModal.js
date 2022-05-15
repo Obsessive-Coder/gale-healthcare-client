@@ -26,7 +26,7 @@ export default function CodeModal({ questionNumber, solution }) {
         <Modal.Body>
           <CodeBlock
             text={solution}
-            language={'php'}
+            language={'text'}
             theme={dracula}
           />
         </Modal.Body>
