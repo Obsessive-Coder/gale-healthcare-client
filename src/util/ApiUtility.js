@@ -5,7 +5,7 @@ const API_URL = 'https://gale-healthcare-backend.herokuapp.com';
 export default class ApiUtility {
   static async solveQuestion(number) {
     try {
-      const endpoint = `${API_URL}/question${number}`;
+      const endpoint = `/question${number}`;
       const { data } = await axios.get(endpoint);
 
       return data;
