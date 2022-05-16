@@ -14,7 +14,7 @@ export default class Constants {
 
     'You are working on a site, after editing some code, the page comes up with a blank screen instead of the site, your php config has display_errors set to 0, describe your process for fixing this issue ...state any assumptions about web server, etc.',
 
-    'TODO: Do Question 8',
+    'You are tasked with creating a url shortening service (like bit.ly or goo.gl) describe how you would store the url data and how you would generate your redirect id(the part after the url for your service) use any code you think is necessary to illustrate your point.',
 
     'TODO: Do Question 9',
   ];
@@ -277,7 +277,9 @@ export default class Constants {
     \nI would begin by displaying these errors and then using the information provided to debug the issue. If the error gave a file and line number\nI would start there and imagine what the code is doing. If I can't use the error to solve it myself I would use Google to find answers. that have\nhad similar errors. After I found a solution online that solves the same error I would first understand the solution and then implement it. If it works\nthen I would move on with my life, else I would repeat the Google process. If I feel I have spent too much time on the error I would try to find a\nteammate with a few minutes of free time in case they could quickly spot something I missed or provide more information from their experiences\nwith the project and PHP.
     `,
 
-    `TODO: Solve question 8`,
+    `I have never made a url shortener so I wouldn't be able to write the function without first following a tutorial. I am all about tutorials and followed\nseveral for the PHP portions of these challenges. However, I feel this would be too specific and I would use too much of the code from the tutorial.
+    \nConsidering this, I still did some research and feel that I understand enough to describe a large portion of the steps required to achieve this.    
+    \nI would create 1 table in a database for this project to store the url, short url, and a unique id. After the short url is generated and stored, the original\nurl can be used to retrieve the shortened url. Generating the url doesn't seem too difficult and is a matter of converting the long url into readable\na string by mapping the url chars to letters and numbers, but I must admit I didn't fully understand the code examples that I looked at. In the real\nworld I would spend enough time to implement some of the code examples I saw and come up with a unique solution that solves the\ncompany's/client's needs.`,
 
     `TODO: Solve question 9`,
   ];
