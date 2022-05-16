@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gale-healthcare-client/static/css/main.645a6627.css",
-    "main.js": "/gale-healthcare-client/static/js/main.01e9c897.js",
+    "main.js": "/gale-healthcare-client/static/js/main.995a1f4a.js",
     "react-syntax-highlighter/refractor-core-import.js": "/gale-healthcare-client/static/js/react-syntax-highlighter/refractor-core-import.ecc46193.chunk.js",
     "react-syntax-highlighter_languages_refractor_abap.js": "/gale-healthcare-client/static/js/react-syntax-highlighter_languages_refractor_abap.25c3295d.chunk.js",
     "react-syntax-highlighter_languages_refractor_actionscript.js": "/gale-healthcare-client/static/js/react-syntax-highlighter_languages_refractor_actionscript.d2ecb46f.chunk.js",
@@ -157,7 +157,7 @@
     "static/js/787.c4e7f8f9.chunk.js": "/gale-healthcare-client/static/js/787.c4e7f8f9.chunk.js",
     "index.html": "/gale-healthcare-client/index.html",
     "main.645a6627.css.map": "/gale-healthcare-client/static/css/main.645a6627.css.map",
-    "main.01e9c897.js.map": "/gale-healthcare-client/static/js/main.01e9c897.js.map",
+    "main.995a1f4a.js.map": "/gale-healthcare-client/static/js/main.995a1f4a.js.map",
     "refractor-core-import.ecc46193.chunk.js.map": "/gale-healthcare-client/static/js/react-syntax-highlighter/refractor-core-import.ecc46193.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_abap.25c3295d.chunk.js.map": "/gale-healthcare-client/static/js/react-syntax-highlighter_languages_refractor_abap.25c3295d.chunk.js.map",
     "react-syntax-highlighter_languages_refractor_actionscript.d2ecb46f.chunk.js.map": "/gale-healthcare-client/static/js/react-syntax-highlighter_languages_refractor_actionscript.d2ecb46f.chunk.js.map",
@@ -314,6 +314,6 @@
   },
   "entrypoints": [
     "static/css/main.645a6627.css",
-    "static/js/main.01e9c897.js"
+    "static/js/main.995a1f4a.js"
   ]
 }
