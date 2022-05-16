@@ -1,70 +1,24 @@
-# Getting Started with Create React App
+# Gale Healthcare Code Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## **[Live Preview](https://obsessive-coder.github.io/gale-healthcare-client/)**
 
-## Available Scripts
+### **[Backend Project](https://github.com/Obsessive-Coder/gale-healthcare-backend)**
 
-In the project directory, you can run:
+This is the client application for a fullstack website that uses React, CSS, Bootstrap, PHP, JS, and MYSQL to show the solutions to the code challenge questions. The projects are deployed on Github Pages, Heroku, and AWS RDS.
 
-### `npm start`
+With the live preview loaded in a browser you can expand each question. After clicking the 'solve' button, the client sends a request to the server hosted on Heroku which. The server and API run the correct solution file and returns the answer for the question. For Question 2, the solution code connects to an AWS RDS database to retrieve data and perform its operations. You can click the button labeled 'Show Code' to see the code for the question's solution.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Solution Files
+All solutions are coded in their required language, however, the project uses a php solution to return the solution for Question 6 when the challenge clearly stated to use JavaScript. I have the solution coded in JS as well and this file is in the same directory as the rest of the solutions.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **[Question 1 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_1.php)**
+* **[Question 2 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_2.php)**
+* **[Question 3 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_3.php)**
+* **[Question 4 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_4.php)**
+* **[Question 5 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_5.php)**
+* **[Question 6 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_6.js)**
+* **[Question 7 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_7.php)**
+* **[Question 8 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_8.php)**
+* **[Question 9 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_9.php)**
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![alt text](https://github.com/Obsessive-Coder/gale-healthcare-client/screens/screen1.png)

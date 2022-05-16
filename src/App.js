@@ -47,9 +47,9 @@ function App() {
   };
 
   return (
-    <div className="App p-5">
-      <header>
-        TODO: Don't forget the header
+    <div className="App px-5">
+      <header className="w-100 my-3 text-center text-secondary">
+        <h1>Gale Healthcare Code Challenge</h1>
       </header>
 
       <Form onSubmit={handleSubmit} className="w-75">
@@ -72,10 +72,6 @@ function App() {
           ))}
         </Accordion>
       </Form>
-
-      <footer>
-        TODO: Don't forget the footer
-      </footer>
     </div>
   );
 }
