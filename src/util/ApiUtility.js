@@ -6,7 +6,12 @@ export default class ApiUtility {
   static async solveQuestion(number) {
     try {
       const endpoint = `${API_URL}/question${number}`;
-      const { data } = await axios.get(endpoint);
+      const { data } = await axios.get(endpoint, {
+        headers: {
+          'Access-Control-Allow-Origin': '*',
+          'Access-Control-Allow-Methods': 'GET',
+        }
+      });
 
       return data;
     } catch (error) {
