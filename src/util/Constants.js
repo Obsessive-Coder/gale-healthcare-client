@@ -8,7 +8,7 @@ export default class Constants {
 
     'TODO: Do Question 4',
 
-    'TODO: Do Question 5',
+    'You need to debug your site, you copy the code to your laptop to run locally, when you try to login to the admin area on your laptop, the database won’t connect ...what could be wrong ?',
 
     'You have an array of 200 numbers, there are duplicates, write javascript code that would find them and return the number of duplicates in order.',
 
@@ -182,7 +182,7 @@ export default class Constants {
 
     `TODO: Solve question 4`,
 
-    `TODO: Solve question 5`,
+    `If I get an error while trying to run code locally and the database won\'t connect I first ensure the database server and related servers and services\nare running. After I confirm the service is running I will double check my database credentials and configuration. Connection errors are almost\nalways solved with these checks, but if this still doesn\'t work I will dig deeper into the error and leverage Google.`,
 
     `
     /**
