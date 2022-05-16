@@ -16,7 +16,7 @@ export default class Constants {
 
     'You are tasked with creating a url shortening service (like bit.ly or goo.gl) describe how you would store the url data and how you would generate your redirect id(the part after the url for your service) use any code you think is necessary to illustrate your point.',
 
-    'TODO: Do Question 9',
+    'Attach a code sample of anything else you\'d like(either existing or new work is fine) or a github account etc.',
   ];
 
   static SOLUTIONS = [
@@ -282,6 +282,6 @@ export default class Constants {
     \nConsidering this, I still did some research and feel that I understand enough to describe a large portion of the steps required to achieve this.    
     \nI would create 1 table in a database for this project to store the url, short url, and a unique id. After the short url is generated and stored, the original\nurl can be used to retrieve the shortened url. Generating the url doesn't seem too difficult and is a matter of converting the long url into a readable\nstring by mapping the url chars to letters and numbers, but I must admit I didn't fully understand the code examples that I looked at. In the real\nworld I would spend enough time to implement some of the code examples I saw and come up with a unique solution that solves the\ncompany's/client's needs.`,
 
-    `TODO: Solve question 9`,
+    `This project... For this code challenge I built a full stack website that uses React for the client hosted on Github Pages, PHP on the backend hosted\non Heroku, and a MYSQL database hosted on AWS RDS. I created a basic API with PHP which I have never used and shown the ability to use AWS\nas my last interviewers requested. Because of this is a "full" project I am using it as my submission for this question.`,
   ];
 }
