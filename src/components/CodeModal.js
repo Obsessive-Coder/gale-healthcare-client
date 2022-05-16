@@ -13,7 +13,7 @@ export default function CodeModal({ questionNumber, solution }) {
   return (
     <>
       <Button variant="outline-success" size="sm" onClick={toggleIsShown}>
-        Show Code
+        Show Solution
       </Button>
 
       <Modal show={isShown} size="xl" onHide={toggleIsShown} contentClassName="bg-dark">

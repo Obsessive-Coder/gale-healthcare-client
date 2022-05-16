@@ -51,9 +51,39 @@ export default function Question({ number, question, answer, solution }) {
               </CardGroup>
             ) : (
               answer.split('\n').map((value, index) => (
-                <Form.Text key={`answer-text-${value}-${index}`} className="d-block h3">
-                  {value}
-                </Form.Text>
+                <>
+                  {number === 9 && (
+                    <div className="d-flex flex-column mb-4">
+                      <a
+                        href="https://github.com/Obsessive-Coder/gale-healthcare-client"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Client Source Code
+                      </a>
+
+                      <a
+                        href="https://github.com/Obsessive-Coder/gale-healthcare-backend"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Backend Source Code
+                      </a>
+
+                      <a
+                        href="https://github.com/Obsessive-Coder"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        My Github Account
+                      </a>
+                    </div>
+                  )}
+
+                  <Form.Text key={`answer-text-${value}-${index}`} className="d-block h3">
+                    {value}
+                  </Form.Text>
+                </>
               ))
             )}
           </>
