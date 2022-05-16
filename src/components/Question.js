@@ -50,8 +50,8 @@ export default function Question({ number, question, answer, solution }) {
                 )}
               </CardGroup>
             ) : (
-              answer.split('\n').map((value) => (
-                <Form.Text key={`answer-text-${value}`} className="d-block h3">
+              answer.split('\n').map((value, index) => (
+                <Form.Text key={`answer-text-${value}-${index}`} className="d-block h3">
                   {value}
                 </Form.Text>
               ))
