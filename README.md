@@ -21,4 +21,14 @@ All solutions are coded in their required language, however, the project uses a 
 * **[Question 8 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_8.php)**
 * **[Question 9 Solution File](https://github.com/Obsessive-Coder/gale-healthcare-backend/blob/main/web/util/solutions/Question_9.php)**
 
-![alt text](https://github.com/Obsessive-Coder/gale-healthcare-client/screens/screen1.png)
+<br />
+<br />
+<br />
+
+![Alt text](screens/screen1.png?raw=true "Title")
+
+<br />
+<br />
+<br />
+
+![Alt text](screens/screen2.png?raw=true "Title")
