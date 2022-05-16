@@ -53,7 +53,7 @@ export default function Question({ number, question, answer, solution }) {
               answer.split('\n').map((value, index) => (
                 <>
                   {number === 9 && (
-                    <div className="d-flex flex-column mb-4">
+                    <div className="d-flex flex-column align-items-start mb-4">
                       <a
                         href="https://github.com/Obsessive-Coder/gale-healthcare-client"
                         target="_blank"
