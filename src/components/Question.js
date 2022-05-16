@@ -12,13 +12,13 @@ export default function Question({ number, question, answer, solution }) {
   return (
     <Form.Group className="d-flex flex-column px-3">
       <div className="px-3 h4" style={{ textAlign: 'justify' }}>
-        {question.split('\n').map(textLine => (
-          <Form.Text key={`question-text-${textLine}`} className="d-block my-3">
+        {question.split('\n').map((textLine, index) => (
+          <Form.Text key={`question-text-${textLine}-${index}`} className="d-block my-3">
             {textLine}
           </Form.Text>
         ))}
 
-        <div className="d-flex mt-5">
+        <div className="d-flex my-4">
           <Form.Label className="m-0 text-secondary" style={{ fontWeight: 'bold' }}>
             Answer:
           </Form.Label>

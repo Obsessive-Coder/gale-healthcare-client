@@ -6,7 +6,7 @@ export default class Constants {
 
     'A school has to give all its students an end-of-year examination. The test consists of 40 questions for each student. The question pool is 70 questions. The 40 question test must contain questions 1 - 5 from the question pool for each test. To minimize cheating, the school wants the 40 questions to be randomly ordered. You may not have the same question twice on a test. Code the above in php.',
 
-    'TODO: Do Question 4',
+    `You have a delivery route in the Tampa bay area which has 10 stops, write code that will determine the order of locations you visit for most efficient delivery.\n\nSTARTING POINT:\nTampa City Hall\n\nLOCATIONS:\nTampa Museum of Art\nUniversity of South Florida\nSt. Joseph’s Children Hospital\nRaymond James Stadium\nMacdill Air Force Base\nTampa International Airport\nLowry Park Zoo\nWestshore Shopping Mall\nBusch Gardens\nPlant High School\n\n`,
 
     'You need to debug your site, you copy the code to your laptop to run locally, when you try to login to the admin area on your laptop, the database won’t connect ...what could be wrong ?',
 
@@ -180,7 +180,8 @@ export default class Constants {
     }
     `,
 
-    `TODO: Solve question 4`,
+    `My solution for this is to create a unique route without visiting anything twice except the starting location as the final stop. Each new route total\ntime would then need to be compared to the previous route\'s time. If the new route is quicker then it becomes the new quickest route. In order\nto get the travel times between all locations in a timely fashion I would need to write a script that consumes Google Maps data and I feel this is\nout of scope of the challenge and even too much for a coding challenge considering the number of other questions. I know there is a better solution\nthan the brute force method I mentioned above, but I don\'t know it without specifically looking up this code challenge which would be cheating.\nIn the real world if I was tasked with this I would ensure my team and superiors understood the additional requirements and time I would need to\nresearch routing algorithms.'
+    `,
 
     `If I get an error while trying to run code locally and the database won\'t connect I first ensure the database server and related servers and services\nare running. After I confirm the service is running I will double check my database credentials and configuration. Connection errors are almost\nalways solved with these checks, but if this still doesn\'t work I will dig deeper into the error and leverage Google.`,
 
@@ -279,7 +280,7 @@ export default class Constants {
 
     `I have never made a url shortener so I wouldn't be able to write the function without first following a tutorial. I am all about tutorials and followed\nseveral for the PHP portions of these challenges. However, I feel this would be too specific and I would use too much of the code from the tutorial.
     \nConsidering this, I still did some research and feel that I understand enough to describe a large portion of the steps required to achieve this.    
-    \nI would create 1 table in a database for this project to store the url, short url, and a unique id. After the short url is generated and stored, the original\nurl can be used to retrieve the shortened url. Generating the url doesn't seem too difficult and is a matter of converting the long url into readable\na string by mapping the url chars to letters and numbers, but I must admit I didn't fully understand the code examples that I looked at. In the real\nworld I would spend enough time to implement some of the code examples I saw and come up with a unique solution that solves the\ncompany's/client's needs.`,
+    \nI would create 1 table in a database for this project to store the url, short url, and a unique id. After the short url is generated and stored, the original\nurl can be used to retrieve the shortened url. Generating the url doesn't seem too difficult and is a matter of converting the long url into a readable\nstring by mapping the url chars to letters and numbers, but I must admit I didn't fully understand the code examples that I looked at. In the real\nworld I would spend enough time to implement some of the code examples I saw and come up with a unique solution that solves the\ncompany's/client's needs.`,
 
     `TODO: Solve question 9`,
   ];
